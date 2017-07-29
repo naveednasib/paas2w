@@ -1,0 +1,127 @@
+
+
+
+
+
+
+
+
+
+
+
+/*sofia-bold*/
+@font-face {
+    font-family: 'sofia-bold';
+    src: url('../fonts/bold/sofia_pro_bold-webfont.eot');
+    src: url('../fonts/bold/sofia_pro_bold-webfont.eot?#sofia-bold') format('embedded-opentype'),
+    url('../fonts/bold/sofia_pro_bold-webfont.woff2') format('woff2'),
+        url('../fonts/bold/sofia_pro_bold-webfont.svg#sofia-light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*sofia-light*/
+@font-face {
+    font-family: 'sofia-light';
+    src: url('../fonts/light/sofia_pro_light-webfont.eot');
+    src: url('../fonts/light/sofia_pro_light-webfont.eot?#sofia-bold') format('embedded-opentype'),
+    url('../fonts/light/sofia_pro_light-webfont.woff2') format('woff2'),
+        url('../fonts/light/sofia_pro_light-webfont.svg#sofia-light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*sofia-medium*/
+@font-face {
+    font-family: 'sofia-medium';
+    src: url('../fonts/medium/sofia_pro_medium-webfont.eot');
+    src: url('../fonts/medium/sofia_pro_medium-webfont.eot?#sofia-bold') format('embedded-opentype'),
+    url('../fonts/bold/medium/sofia_pro_medium-webfont.woff2') format('woff2'),
+        url('../fonts/medium/sofia_pro_medium-webfont.svg#sofia-light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+h1,h2{font-family: 'sofia-bold';font-size:36px;}
+
+
+
+body{height: 1800px;}
+/* section 1 */
+header{    height: auto;    z-index: 10;
+    position: fixed;
+    width: 100%;}
+
+.navbar-inverse{background-color:transparent;border:0;max-width:1230px;width: 100%;padding-left:15px;padding-right:15px;    margin: 15px auto; }
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus{background-color:transparent;}
+.navbar-inverse .navbar-nav > li > a{color:white;font-size:18px;}
+
+
+.mid-container{max-width:1230px;width: 100%;padding-left:15px;padding-right:15px;margin:auto; z-index: 3;}
+
+.home-banner{position: relative;padding-top:150px;}
+
+
+.home-banner article{max-width: 580px;margin: auto;text-align: center; z-index: 3;    position: relative;}
+.home-banner .heading{ font-weight: bold;font-family: 'sofia-bold';color:white;}
+
+.home-banner .img-container {text-align: center;}
+.home-banner .img-container img{margin:auto;    position: relative;    z-index: 3;}
+
+.home-banner .bg-color{position: absolute;width: 100%;    height: 100%;
+    z-index: -1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#027eac+0,099eae+50,17d7b1+100 */
+background: #027eac; /* Old browsers */
+background: -moz-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #027eac 0%,#099eae 50%,#17d7b1 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #027eac 0%,#099eae 50%,#17d7b1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#027eac', endColorstr='#17d7b1',GradientType=1 ); /* IE6-9 */top: 0;
+}
+#particles-js{      width: 100%;  position: absolute;    top: 0;    height: 100%;   }
+
+
+.t-btn{padding: 5px 26px;  position: relative;  font-size: 20px;    border: 2px solid white;    border-radius: 20px;        color: white;overflow: hidden;z-index: 2;background-color: transparent;transition: 0.5s ease background-color;z-index: 1;}
+
+
+.t-btn:hover{color:#17d7b1 ;position: relative; background-color: #fff;}
+/* .t-btn:hover:before{ width: 100%;    z-index: -1;} */
+
+
+
+
+
+
+
+
+
+
+
+/* Section 2 */
+.hardware-section{}
+.hardware-section .mid-container{max-width: 1032px;padding-left:15px;padding-right:15px;position: relative;}
+.hardware-section article{text-align: center;}
+/* .hardware-section article .heading span{display:block;} */
+
+.hardware-section{padding-top:50px;padding-bottom: 50px;}
+
+.hardware-section article .heading{color:#14c9b0;font-weight: bold;}
+.hardware-section article .heading .dark-color{color:#213242;font-family:'sofia-light'; }
+.hardware-section .tile {text-align: center;    text-align: center;
+    padding: 15px;    border: 3px solid #e0e0e0;    border-radius: 15px;background-color:white; }
+
+ .hardware-section   .paralla-abs-svg{position: absolute; width: 100%;height: 100%;   left: 0;  top: 50%;z-index: -1;
+background-image: url(../images/sm-partial.svg);background-repeat: no-repeat;background-position: center;background-size: contain;
+}
+
+
+
+
+
+    /* atom-feature */
+    .atom-feature {    position: relative;}
+    .mid-container{max-width: 1032px;padding-left:15px;padding-right:15px;position: relative;margin:auto;}
+    .atom-feature  article{text-align: center;}
+    .atom-feature  article .heading{font-weight: bold;font-family: 'sofia-bold';font-size:36px;}
+    .atom-feature  article .para{color:#7d7d7d;max-width: 800px;padding-left:15px;padding-right:15px;margin:auto;}
+    
+    .atom-feature .paralla-abs-svg{position: absolute; width: 100%;height: 100%;   left:-40%;  top: -50%;z-index: -1;
+background-image: url(../images/lg-partial.svg);background-repeat: no-repeat;background-position: center;}
