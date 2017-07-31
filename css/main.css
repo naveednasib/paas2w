@@ -22,19 +22,20 @@
 /*sofia-light*/
 @font-face {
     font-family: 'sofia-light';
-    src: url('../fonts/light/sofia_pro_light-webfont.eot');
-    src: url('../fonts/light/sofia_pro_light-webfont.eot?#sofia-bold') format('embedded-opentype'),
-    url('../fonts/light/sofia_pro_light-webfont.woff2') format('woff2'),
-        url('../fonts/light/sofia_pro_light-webfont.svg#sofia-light') format('svg');
-    font-weight: normal;
-    font-style: normal;
+    src: url('../fonts/light/SofiaPro-Light.eot');
+    src: url('../fonts/light/SofiaPro-Light.eot?#sofia-light') format('embedded-opentype'),
+    url('../fonts/light/SofiaPro-Light.otf') format('otf'),
+    url('../fonts/light/SofiaPro-Light.woff') format('woff'),
+        url('../fonts/light/SofiaPro-Light.ttf') format('ttf'),
+        url('../fonts/light/SofiaPro-Light.svg#sofia-light') format('svg');
+  
 }
 /*sofia-medium*/
 @font-face {
     font-family: 'sofia-medium';
     src: url('../fonts/medium/sofia_pro_medium-webfont.eot');
     src: url('../fonts/medium/sofia_pro_medium-webfont.eot?#sofia-bold') format('embedded-opentype'),
-    url('../fonts/bold/medium/sofia_pro_medium-webfont.woff2') format('woff2'),
+    url('../fonts/medium/sofia_pro_medium-webfont.woff2') format('woff2'),
         url('../fonts/medium/sofia_pro_medium-webfont.svg#sofia-light') format('svg');
     font-weight: normal;
     font-style: normal;
@@ -85,6 +86,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#027eac', end
 .t-btn:hover{color:#17d7b1 ;position: relative; background-color: #fff;}
 /* .t-btn:hover:before{ width: 100%;    z-index: -1;} */
 
+.p-btn{padding: 5px 26px;  position: relative;  font-size: 20px;    border: 2px solid #17d7b1   ; border-radius: 20px;        color: #17d7b1; ;overflow: hidden;z-index: 2;
+    background-color: transparent;transition: 0.5s ease background-color;z-index: 1;}
+
+
+.p-btn:hover{color:#17d7b1 ;position: relative; background-color: #17d7b1;}
+/* .t-btn:hover:before{ width: 100%;    z-index: -1;} */
+
+
+
+
+
 
 
 
@@ -101,27 +113,86 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#027eac', end
 .hardware-section article{text-align: center;}
 /* .hardware-section article .heading span{display:block;} */
 
-.hardware-section{padding-top:50px;padding-bottom: 50px;}
+.hardware-section{padding-top:60px;padding-bottom: 60px;}
 
-.hardware-section article .heading{color:#14c9b0;font-weight: bold;}
+.hardware-section article .heading{color:#14c9b0;font-weight: bold;margin-top:0;}
 .hardware-section article .heading .dark-color{color:#213242;font-family:'sofia-light'; }
-.hardware-section .tile {text-align: center;    text-align: center;
-    padding: 15px;    border: 3px solid #e0e0e0;    border-radius: 15px;background-color:white; }
+.hardware-section article .heading .element{padding-top:8px;font-family:'sofia-bold';    font-size: 42px;}
 
+.hardware-section .tile-container{padding-top: 60px;display: flex;flex-flow: row wrap;}
+.hardware-section .tile-container  .col-sm-4{    display: flex;
+    flex-flow: row wrap;
+    text-align: center;
+    justify-content: center;}
+.hardware-section .tile {text-align: center;    text-align: center;
+    padding:70px 15px;    border: 3px solid #e0e0e0;    border-radius: 15px;background-color:white;
+    transition: all 0.5s ease;cursor:pointer; }
+    
+    .hardware-section .tile  img{margin: auto;}
+    .hardware-section .tile .heading{font-family:'sofia-bold';font-size:24px;}
+      
+    .hardware-section .sm-icon{ padding:25px 15px;}
+    .hardware-section .tile  .para{color:#7d7d7d;font-size:18px;font-family:'sofia-medium';}
  .hardware-section   .paralla-abs-svg{position: absolute; width: 100%;height: 100%;   left: 0;  top: 50%;z-index: -1;
 background-image: url(../images/sm-partial.svg);background-repeat: no-repeat;background-position: center;background-size: contain;
 }
+ .hardware-section .tile:hover{border:3px solid white;-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.15);
+-moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.15);
+box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.15);}
 
 
 
 
 
-    /* atom-feature */
-    .atom-feature {    position: relative;}
+
+
+
+
+
+
+
+
+    /*----------------- atom-feature------------- */
+    .atom-feature {    position: relative;padding-top:60px;padding-bottom: 60px;}
     .mid-container{max-width: 1032px;padding-left:15px;padding-right:15px;position: relative;margin:auto;}
     .atom-feature  article{text-align: center;}
     .atom-feature  article .heading{font-weight: bold;font-family: 'sofia-bold';font-size:36px;}
-    .atom-feature  article .para{color:#7d7d7d;max-width: 800px;padding-left:15px;padding-right:15px;margin:auto;}
+    .atom-feature  article .para{color:#7d7d7d;max-width: 800px;padding-left:15px;padding-right:15px;margin:auto;font-size:18px;font-family:'sofia-light';    padding-top: 15px;}
     
     .atom-feature .paralla-abs-svg{position: absolute; width: 100%;height: 100%;   left:-40%;  top: -50%;z-index: -1;
 background-image: url(../images/lg-partial.svg);background-repeat: no-repeat;background-position: center;}
+  .atom-feature article  .p-btn{font-size:20px;margin-top:50px;}
+
+
+   .atom-feature .tile-container{padding-top:30px;padding-bottom: 30px;}
+     .atom-feature .tile-container .mid-container2{max-width: 1260px;padding-left:15px;padding-right:15px;position: relative;margin:auto;}
+
+
+   .atom-feature .tile-container .box{}
+  .atom-feature .tile-container .tile{ padding:40px 30px;color:#7c7c7c ;z-index: 3;position:relative;overflow: hidden;  transition: color 0.9s ease; }
+
+  .atom-feature .tile-container .box .bg-gredient{     background: #027eac;
+    background: -moz-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%);
+    background: -webkit-linear-gradient(left, #027eac 0%,#099eae 50%,#17d7b1 100%);
+    background: linear-gradient(to right, #027eac 0%,#099eae 50%,#17d7b1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#027eac', endColorstr='#17d7b1',GradientType=1 );
+    position: absolute;  border-radius: 100%;
+  transition: transform 0.9s ease, width 0.9s ease,height 0.9s ease;
+
+         width: 10px;
+        height: 10px; 
+    z-index: 1;
+  left:0;
+  
+}
+.atom-feature .tile-container .tile:hover{color:white;cursor: pointer;}
+ .atom-feature .tile-container .tile:hover  .bg-gredient{  width: 100%;    height: 100%;    z-index: 1;     
+        transform: scale(1.5,3.2);
+  
+    
+    }
+
+
+ .atom-feature .tile-container .tile img{    margin-right: 15px;z-index: 3;position:relative;}
+  .atom-feature .tile-container .tile .heading{font-family:'sofia-medium';font-size:22px; z-index: 3;position:relative;}
+   .atom-feature .tile-container .tile .para{font-size:18px;font-family:'sofia-medium';z-index: 3;position:relative;}
