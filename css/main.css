@@ -455,14 +455,6 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
     transition: color 0.9s ease;
 }
 
-<<<<<<< HEAD
-  .atom-feature .tile-container .box .bg-gredient{   
-    position: absolute;  border-radius: 100%;
-  transition: transform 1.5s ease, width 0.9s ease,height 0.9s ease;
-    opacity: 0;
-         width: 10px;
-        height: 10px; 
-=======
 .atom-feature .tile-container .box .bg-gredient {
     position: absolute;
     border-radius: 100%;
@@ -470,7 +462,6 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
 
     width: 10px;
     height: 10px;
->>>>>>> 3a0488faa46d5c1e414eaeebf777723f8ec32c84
     z-index: 1;
     left: 0;
     right: 0;
@@ -494,15 +485,6 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
     transform: scale(1.5, 3.2);
     background: #027eac;
     background: -moz-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%);
-<<<<<<< HEAD
-    background: -webkit-linear-gradient(left, #027eac 0%,#099eae 50%,#17d7b1 100%);
-    background: linear-gradient(to right, #027eac 0%,#099eae 50%,#17d7b1 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#027eac', endColorstr='#17d7b1',GradientType=1 );
-    opacity: 1;
-      transition: transform 0.9s ease, width 0.9s ease,height 0.9s ease,opacity 0.9s ease;
-  
-    
-=======
     background: -webkit-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%);
     background: linear-gradient(to right, #027eac 0%, #099eae 50%, #17d7b1 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#027eac', endColorstr='#17d7b1', GradientType=1);
@@ -534,58 +516,12 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
     ul.dropdown-menu.atom-menu {
         padding: 40px 20px;
         width: 600px;
->>>>>>> 3a0488faa46d5c1e414eaeebf777723f8ec32c84
     }
 
     ul.dropdown-menu.atom-menu li.menu-item a {
         font-size: 18px;
     }
 
-<<<<<<< HEAD
- .atom-feature .tile-container .tile img{    margin-right: 15px;z-index: 3;position:relative;}
-  .atom-feature .tile-container .tile .heading{font-family:'sofia-medium';font-size:22px; z-index: 3;position:relative;}
-   .atom-feature .tile-container .tile .para{font-size:18px;font-family:'sofia-medium';z-index: 3;position:relative;    padding-top: 15px;}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    /*----------------- scroll icon------------- */
-      .scroll-container{padding-top:60px;padding-bottom:60px;border:1px solid red; }
-    .scroll-container .mid-container{max-width: 1070px;padding-left:15px;padding-right:15px;position: relative;margin:auto;}
-    .scroll-container  article{text-align: center;}
-   .scroll-container  .tile-container{padding-top:60px;}
-   .scroll-container  .tile-container .tile{text-align: center;}
-
-
-   .scroll-container .circle-wrapper{position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    clip: rect(auto,9999px,auto,-9999px);
-    pointer-events: none;}
-    .scroll-container .circle-wrapper .circle-radius{    position: absolute;
-    pointer-events: none;
-    z-index: -1;
-    background: #f3f5f9;
-    border-radius: 50%;
-    left: 0;
-    top: 0}
-    .add-circle{    width: 2278.33px;    height: 2278.33px;}
-
-   /*----------------- scroll icon------------- */
-=======
     ul.dropdown-menu.atom-menu li.menu-btn a {
         font-size: 18px;
     }
@@ -680,15 +616,31 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
     ul.dropdown-menu.atom-menu li.menu-item a {
         font-size: 16px;
         margin-top: 10px;
-    }
+    }}
 
-    ul.dropdown-menu.atom-menu li.menu-btn a {
-        border-color: #fff;
-    }
 
-    ul.dropdown-menu.atom-menu:after {
-        content: none;
-    }
 
-}
->>>>>>> 3a0488faa46d5c1e414eaeebf777723f8ec32c84
+
+    /*----------------- scroll icon------------- */
+    .scroll-container{padding-top:60px;padding-bottom:60px;border:1px solid red; }
+    .scroll-container .mid-container{max-width: 1070px;padding-left:15px;padding-right:15px;position: relative;margin:auto;}
+    .scroll-container  article{text-align: center;}
+    .scroll-container  .tile-container{padding-top:60px;}
+    .scroll-container  .tile-container .tile{text-align: center;}
+
+
+    .scroll-container .circle-wrapper{position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        clip: rect(auto,9999px,auto,-9999px);
+        pointer-events: none;}
+    .scroll-container .circle-wrapper .circle-radius{    position: absolute;
+        pointer-events: none;
+        z-index: -1;
+        background: #f3f5f9;
+        border-radius: 50%;
+        left: 0;    overflow: hidden;
+        top: 0}
+    .add-circle{    width: 2278.33px;    height: 2278.33px;}
