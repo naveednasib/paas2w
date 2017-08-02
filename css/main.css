@@ -47,6 +47,10 @@ header {
     z-index: 10;
     position: fixed;
     width: 100%;
+
+}
+
+header.bg-color {
     background: #027eac;
     background: -moz-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%);
     background: -webkit-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%);
@@ -340,6 +344,7 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
 
 .hardware-section .tile img {
     margin: auto;
+    transition: all 0.5s ease;
 }
 
 .hardware-section .tile .heading {
@@ -355,6 +360,10 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
     color: #7d7d7d;
     font-size: 18px;
     font-family: 'sofia-medium';
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s ease;
 }
 
 .hardware-section .paralla-abs-svg {
@@ -375,6 +384,17 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
     -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
     -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
     box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+    padding: 30px 15px;
+}
+
+.hardware-section .tile:hover img {
+    width: 25%;
+}
+
+.hardware-section .tile:hover .para {
+    height: auto;
+    overflow: visible;
+    opacity: 1;
 }
 
 /*----------------- atom-feature------------- */
@@ -404,7 +424,7 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
 
 .atom-feature article .para {
     color: #7d7d7d;
-    max-width: 800px;
+    max-width: 770px;
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
@@ -616,10 +636,25 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
     ul.dropdown-menu.atom-menu li.menu-item a {
         font-size: 16px;
         margin-top: 10px;
-    }}
+    }
 
+    ul.dropdown-menu.atom-menu li.menu-btn a {
+        border-color: #fff;
+    }
 
+    ul.dropdown-menu.atom-menu:after {
+        content: none;
+    }
 
+    header {
+        background: #027eac;
+        background: -moz-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%);
+        background: -webkit-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%);
+        background: linear-gradient(to right, #027eac 0%, #099eae 50%, #17d7b1 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#027eac', endColorstr='#17d7b1', GradientType=1);
+    }
+
+}
 
     /*----------------- scroll icon------------- */
     .scroll-container{padding-top:60px;padding-bottom:60px;border:1px solid red; }

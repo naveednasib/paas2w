@@ -1,106 +1,60 @@
-
-
 $(document).ready(function () {
 
-  var options = {
-    strings: ["Hardware &amp; Software Manufacturers..", "Businesses.", "Organizations (For or Not For Profit)..", "Govermental Agencies.."],
-    typeSpeed: 70,
-    loop: true
-  }
+    var options = {
+        strings: ["Hardware &amp; Software Manufacturers..", "Businesses.", "Organizations (For or Not For Profit)..", "Govermental Agencies.."],
+        typeSpeed: 70,
+        loop: true
+    }
 
-  var typed = new Typed(".element", options);
-
-
-  var scroll_circle = $(".scroll-container").offset().top;
-
-  $(window).scroll(function () {
-    particle_parrallax();
+    var typed = new Typed(".element", options);
 
 
-    var windowTop = $(window).scrollTop();
-
-    if ((scroll_circle - 300)) { }
-
-
-  });
-
-
-
-
-
-  $(".scroll-container").on("mouseenter", function() {
-  var lastScrollTop = 0;
-  var count =0;
-
-  
+    var addingRatio;
+    var CurrentScroll = 0;
     $(window).scroll(function () {
-        var windowTop = $(window).scrollTop();  
-    
+        var particleSvg = $(".paralla-abs-svg");
+        particleSvg = parseInt(particleSvg.css("top"));
+        var windowTop = $(window).scrollTop();
+        var hardwareTop = $(".hardware-section").offset().top;
 
 
-  var st = $(this).scrollTop();
-   if (st > lastScrollTop){
-      console.log(count += 1);
-         $(".scroll-container .circle-wrapper .circle-radius ").addClass('add-circle');
-          $(".scroll-container .circle-wrapper .circle-radius").css("transform","scale("+count+")");
-   } else {
- console.log(count -=1);
-   }
-   lastScrollTop = st;
+        // console.log( particleSvg);
+
+        addingRatio = ( (windowTop + windowTop ) / windowTop);
+
+        // console.log( particleSvg);
 
 
-    
-  });
+        var NextScroll = $(this).scrollTop();
+
+        if (NextScroll > CurrentScroll) {
+            //write the codes related to down-ward scrolling here
+            particleSvg += addingRatio;
+        }
+        else {
+            //write the codes related to upward-scrolling here
+            particleSvg -= addingRatio;
+        }
+        $(".paralla-abs-svg").css("top", particleSvg);
+        CurrentScroll = NextScroll;  //Updates current scroll position
 
 
-
-
-
-  }).on("mouseleave", function() {
-
-    
-    return false;
-   });
-
-
-
+    });
+    $(window).scroll(function () {
+        if ($(window).scrollTop() > 20) {
+            $("header").addClass('bg-color');
+        } else {
+            $("header").removeClass('bg-color');
+        }
+    });
 
 });
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 particlesJS.load('particles-js', 'js/particles.json', function () {
-  // console.log('callback - particles.js config loaded');
+    // console.log('callback - particles.js config loaded');
 });
 
-
-
-
-
-
-var addingRatio;
-var CurrentScroll = 0;
-
-function particle_parrallax() {
-
-  var particleSvg = $(".paralla-abs-svg");
-  particleSvg = parseInt(particleSvg.css("top"));
-  var windowTop = $(window).scrollTop();
-  var hardwareTop = $(".hardware-section").offset().top;
-  addingRatio = ((windowTop + windowTop) / windowTop);
-  var NextScroll = $(this).scrollTop();
-  if (NextScroll > CurrentScroll) {
-    //write the codes related to down-ward scrolling here
-    particleSvg += addingRatio;
-  }
-  else {
-    //write the codes related to upward-scrolling here
-    particleSvg -= addingRatio;
-  }
-  $(".paralla-abs-svg").css("top", particleSvg);
-  CurrentScroll = NextScroll;  //Updates current scroll position
-
-
-}
 
 
 
