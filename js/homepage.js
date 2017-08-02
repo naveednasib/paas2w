@@ -41,7 +41,7 @@ $(document).ready(function () {
   var st = $(this).scrollTop();
    if (st > lastScrollTop){
       console.log(count += 1);
-         $(".scroll-container ").addClass('add-circle');
+         $(".scroll-container .circle-wrapper .circle-radius ").addClass('add-circle');
           $(".scroll-container .circle-wrapper .circle-radius").css("transform","scale("+count+")");
    } else {
  console.log(count -=1);
