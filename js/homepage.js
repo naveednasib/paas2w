@@ -40,8 +40,15 @@ $(document).ready(function () {
 
 
     });
+
+    /* Header Background Color On scroll*/
+    if ($(document).scrollTop() > 20) {
+        $("header").addClass('bg-color');
+    } else {
+        $("header").removeClass('bg-color');
+    }
     $(window).scroll(function () {
-        if ($(window).scrollTop() > 20) {
+        if ($(document).scrollTop() > 20) {
             $("header").addClass('bg-color');
         } else {
             $("header").removeClass('bg-color');
