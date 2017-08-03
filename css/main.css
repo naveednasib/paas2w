@@ -676,50 +676,64 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
 .atom-for .scattered-circles {
     position: absolute;
 }
-
+.atom-for .scattered-circles.circle-center{
+    left:50%!important;
+    top:50%!important;
+    transform:translate(-50%,-50%);
+    transition:all 0.9s ease;
+}
 .atom-for .scattered-circles.circle1 {
     left: 12%;
     top: 42%;
+    transition:all 0.9s ease;
 }
 
 .atom-for .scattered-circles.circle2 {
     left: 0%;
     top: 32%;
+    transition:all 0.9s ease;
 }
 
 .atom-for .scattered-circles.circle3 {
     left: 33%;
     top: 26%;
+    transition:all 0.9s ease;
 }
 
 .atom-for .scattered-circles.circle4 {
     left: 45%;
-    top: 54%
+    top: 54%;
+    transition:all 0.9s ease;
 }
 
 .atom-for .scattered-circles.circle5 {
     left: 57%;
     top: 35%;
+    transition:all 0.9s ease;
 }
 
 .atom-for .scattered-circles.circle6 {
     left: 66%;
     top: 52%;
+    transition:all 0.9s ease;
 }
 
 .atom-for .scattered-circles.circle7 {
     left: 70%;
     top: 28%;
+    transition:all 0.9s ease;
 }
 
 .atom-for .scattered-circles.circle8 {
     left: 27%;
     top: 73%;
+    transition:all 0.9s ease;
 }
 
 .atom-for .scattered-circles.circle9 {
     left: 83%;
     top: 75%;
+    transition:all 0.9s ease;
 }
 
 .atom-for .scattered-circles.circle2 .circle-wrapper .circles img {
