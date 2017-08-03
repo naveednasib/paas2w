@@ -40,6 +40,8 @@ h1, h2 {
 body {
 
 }
+
+}
 .wrapper-holder{    position: relative;}
 /* section 1 */
 header {
@@ -47,6 +49,10 @@ header {
     z-index: 10;
     position: fixed;
     width: 100%;
+
+}
+
+header.bg-color {
     background: #027eac;
     background: -moz-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%);
     background: -webkit-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%);
@@ -75,6 +81,41 @@ header {
 .navbar-inverse .navbar-nav > li > a {
     color: white;
     font-size: 18px;
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.navbar-inverse .navbar-nav > li > a:after {
+    content: "";
+    width: 0;
+    bottom: 0;
+    left: 50%;
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    transition: all 0.5s ease;
+    transform: translate(-50%, 0%);
+}
+
+.navbar-inverse .navbar-nav > li > a:before {
+    content: "";
+    width: 0;
+    top: 0;
+    right: 50%;
+    position: absolute;
+    background-color: #fff;
+    height: 2px;
+    transition: all 0.5s ease;
+    transform: translate(50%, 0%);
+}
+
+.navbar-inverse .navbar-nav > li > a:hover:after {
+    width: 100%;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover:before {
+    width: 100%;
 }
 
 .navbar-brand {
@@ -84,10 +125,11 @@ header {
 ul.dropdown-menu.atom-menu {
     border: 0px;
     border-radius: 7px;
-    padding: 80px 40px;
-    left: 50%;
-    transform: translate(-50%, 0%);
+    padding: 60px 40px;
+    left: -230%;
+    /*transform: translate(-50%, 0%);*/
     width: 808px;
+    top: 45px;
 }
 
 ul.dropdown-menu.atom-menu:after {
@@ -121,6 +163,12 @@ ul.dropdown-menu.atom-menu li.menu-btn a {
     padding: 4px 39px;
     border-radius: 30px;
     margin-top: 40px;
+    transition: all 0.3s ease;
+}
+
+ul.dropdown-menu.atom-menu li.menu-btn a:hover {
+    color: #fff;
+    background-color: #14c9b0;
 }
 
 ul.dropdown-menu.atom-menu li.menu-item a {
@@ -267,8 +315,8 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
     z-index: 1;
 }
 
-.p-btn:hover {
-    color: #17d7b1;
+.p-btn:hover, .p-btn:focus {
+    color: #fff;
     position: relative;
     background-color: #17d7b1;
 }
@@ -334,27 +382,48 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
     border: 3px solid #e0e0e0;
     border-radius: 15px;
     background-color: white;
-    transition: all 0.5s ease;
+    transition: all 0.9s ease;
     cursor: pointer;
+    height: 348px;
+}
+
+.hardware-section .tile:hover {
+    border: 3px solid white;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+    padding: 30px 15px;
 }
 
 .hardware-section .tile img {
     margin: auto;
+    transition: all 0.9s ease;
+    max-width: 100px;
 }
 
-.hardware-section .tile .heading {
-    font-family: 'sofia-bold';
-    font-size: 24px;
-}
-
-.hardware-section .sm-icon {
-    padding: 25px 15px;
+.hardware-section .tile:hover img {
+    max-width: 25%;
 }
 
 .hardware-section .tile .para {
     color: #7d7d7d;
     font-size: 18px;
     font-family: 'sofia-medium';
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.9s ease;
+}
+
+.hardware-section .tile:hover .para {
+    height: auto;
+    overflow: visible;
+    opacity: 1;
+}
+
+.hardware-section .tile .heading {
+    font-family: 'sofia-bold';
+    font-size: 24px;
 }
 
 .hardware-section .paralla-abs-svg {
@@ -368,13 +437,6 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
-}
-
-.hardware-section .tile:hover {
-    border: 3px solid white;
-    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
-    -moz-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
-    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
 }
 
 /*----------------- atom-feature------------- */
@@ -404,7 +466,7 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
 
 .atom-feature article .para {
     color: #7d7d7d;
-    max-width: 800px;
+    max-width: 770px;
     padding-left: 15px;
     padding-right: 15px;
     margin: auto;
@@ -433,6 +495,9 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
 .atom-feature .tile-container {
     padding-top: 30px;
     padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
 }
 
 .atom-feature .tile-container .mid-container2 {
@@ -493,9 +558,74 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
 }
 
 .atom-feature .tile-container .tile img {
-    margin-right: 15px;
+    margin-right: 13px;
     z-index: 3;
     position: relative;
+    background-image: url(../images/40901-atom-feature-sprite.png);
+    width: 49px;
+    display: inline-block;
+    transition: 0s all;
+    transition-delay: 0.3s;
+}
+
+.atom-feature .tile-container .tile img.sandbox {
+    background-position: 0 -482px;
+    height: 35px;
+}
+
+.atom-feature .tile-container .tile img.anti-virus {
+    background-position: 0 -106px;
+    height: 35px;
+}
+
+.atom-feature .tile-container .tile img.url-filtering {
+    background-position: 0 -404px;
+    height: 29px;
+}
+
+.atom-feature .tile-container .tile img.ad-blocker {
+    background-position: 0 0;
+    height: 43px;
+}
+
+.atom-feature .tile-container .tile img.app-protocol {
+    background-position: 0 -294px;
+    height: 45px;
+}
+
+.atom-feature .tile-container .tile img.ids-ips {
+    background-position: 0 -194px;
+    height: 40px;
+}
+
+.atom-feature .tile-container .tile:hover img.sandbox {
+    background-position: 0 -526px;
+    height: 35px;
+}
+
+.atom-feature .tile-container .tile:hover img.anti-virus {
+    background-position: 0 -150px;
+    height: 35px;
+}
+
+.atom-feature .tile-container .tile:hover img.url-filtering {
+    background-position: 0 -443px;
+    height: 29px;
+}
+
+.atom-feature .tile-container .tile:hover img.ad-blocker {
+    background-position: 0 -53px;
+    height: 43px;
+}
+
+.atom-feature .tile-container .tile:hover img.app-protocol {
+    background-position: 0 -349px;
+    height: 45px;
+}
+
+.atom-feature .tile-container .tile:hover img.ids-ips {
+    background-position: 0 -244px;
+    height: 40px;
 }
 
 .atom-feature .tile-container .tile .heading {
@@ -512,10 +642,209 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
     position: relative;
 }
 
+/*----------------- atom-for------------- */
+
+.atom-for {
+    padding: 80px 0px;
+    background-color: #fff;
+    background-image: url(../images/dotted-bg.png);
+    background-position: 45px 175px;
+    background-repeat: no-repeat;
+    height: 140vh;
+    position: relative;
+}
+
+.atom-for article {
+    text-align: center;
+}
+
+.atom-for .section-heading {
+    color: #213242;
+    font-family: 'sofia-light';
+    font-size: 36px;
+    margin-top: 0px;
+}
+
+.atom-for .section-heading span {
+    font-size: 42px;
+    color: #14c9b0;
+    font-family: 'sofia-bold';
+    display: block;
+    margin-top: 4px;
+}
+
+.atom-for .scattered-circles {
+    position: absolute;
+}
+
+.atom-for .scattered-circles.circle1 {
+    left: 12%;
+    top: 39%;
+}
+
+.atom-for .scattered-circles.circle2 {
+    left: 0%;
+    top: 29%;
+}
+
+.atom-for .scattered-circles.circle3 {
+    left: 33%;
+    top: 23%;
+}
+
+.atom-for .scattered-circles.circle4 {
+    left: 45%;
+    top: 51%
+}
+
+.atom-for .scattered-circles.circle5 {
+    left: 57%;
+    top: 32%;
+}
+
+.atom-for .scattered-circles.circle6 {
+    left: 66%;
+    top: 49%;
+}
+
+.atom-for .scattered-circles.circle7 {
+    left: 70%;
+    top: 25%;
+}
+
+.atom-for .scattered-circles.circle8 {
+    left: 27%;
+    top: 70%;
+}
+
+.atom-for .scattered-circles.circle9 {
+    left: 83%;
+    top: 72%;
+}
+
+.atom-for .scattered-circles.circle2 .circles img {
+    width: 54px;
+}
+
+.atom-for .scattered-circles.circle3 .circles img {
+    width: 45px;
+}
+
+.atom-for .scattered-circles.circle4 .circles img {
+    width: 95px;
+}
+
+.atom-for .scattered-circles.circle5 .circles img {
+    width: 54px;
+}
+
+.atom-for .scattered-circles.circle6 .circles img {
+    width: 82px;
+}
+
+.atom-for .scattered-circles.circle7 .circles img {
+    width: 98px;
+}
+
+.atom-for .scattered-circles.circle8 .circles img {
+    width: 64px;
+}
+
+.atom-for .scattered-circles.circle9 .circles img {
+    width: 68px;
+}
+
+.atom-for .scattered-circles.circle2 .circle-text {
+    left: 82px;
+    top: 52%;
+}
+
+.atom-for .scattered-circles.circle3 .circle-text {
+    left: 77px;
+    top: 64%;
+}
+
+.atom-for .scattered-circles.circle5 .circle-text {
+    left: 90px;
+    top: 60%;
+}
+
+.atom-for .scattered-circles.circle6 .circle-text {
+    left: 115px;
+    top: 50%;
+}
+
+.atom-for .scattered-circles .circles {
+    border-radius: 50%;
+    padding: 3px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.atom-for .scattered-circles:hover .circles {
+    border-color: #14c9b0;
+    overflow: visible;
+}
+
+.atom-for .scattered-circles .circle-text {
+    background-color: #fff;
+    padding: 20px 0px 20px 20px;
+    box-shadow: 1px 0px 10px 2px rgba(0, 0, 0, 0.09);
+    position: absolute;
+    left: 132px;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 240px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+    z-index: 2;
+}
+
+.atom-for .scattered-circles:hover .circle-text {
+    opacity: 1;
+}
+
+.atom-for .scattered-circles .circle-text:after {
+    content: '';
+    background-image: url(../images/arrow-shaded.png);
+    position: absolute;
+    left: -22px;
+    top: 16px;
+    height: 17px;
+    width: 23px;
+}
+
+.atom-for .scattered-circles .circle-text img {
+    float: left;
+    margin-right: 15px;
+}
+
+.atom-for .scattered-circles .circle-text h3 {
+    font-size: 26px;
+    color: #14c9b0;
+    margin: 0px;
+    margin-top: 0;
+    line-height: 1;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+
+.atom-for .scattered-circles .circle-text h3 span {
+    font-size: 18px;
+    color: #213242;
+    display: block;
+    margin-top: 5px;
+}
+
+/*----------------- View Ports ------------- */
 @media (max-width: 991px) {
     ul.dropdown-menu.atom-menu {
         padding: 40px 20px;
         width: 600px;
+        left: -165%;
     }
 
     ul.dropdown-menu.atom-menu li.menu-item a {
@@ -616,11 +945,32 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
     ul.dropdown-menu.atom-menu li.menu-item a {
         font-size: 16px;
         margin-top: 10px;
-    }}
+    }
 
+    ul.dropdown-menu.atom-menu li.menu-btn a {
+        border-color: #fff;
+    }
 
+    ul.dropdown-menu.atom-menu:after {
+        content: none;
+    }
 
+    header {
+        background: #027eac;
+        background: -moz-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%);
+        background: -webkit-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%);
+        background: linear-gradient(to right, #027eac 0%, #099eae 50%, #17d7b1 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#027eac', endColorstr='#17d7b1', GradientType=1);
+    }
 
+}
+
+/*----------------- scroll icon------------- */
+.scroll-container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f1fcfa;
+}
     /*----------------- scroll icon------------- */
     .scroll-container{padding-top:60px;padding-bottom:60px;border:1px solid red; position: relative;overflow: hidden;}
     .scroll-container .mid-container{max-width: 1070px;padding-left:15px;padding-right:15px;position: relative;margin:auto;}
@@ -628,6 +978,13 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
     .scroll-container  .tile-container{padding-top:60px;}
     .scroll-container  .tile-container .tile{text-align: center;}
 
+.scroll-container .mid-container {
+    max-width: 1070px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    margin: auto;
+}
 
     .scroll-container .circle-wrapper{position:absolute;
         width: 100%;
@@ -642,12 +999,12 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
         background: #f3f5f9;
         border-radius: 50%;
         left: 50%;    overflow: hidden;
-        top: 0; 
+        top: 0;
        /* transition: all 0.4s ease; */
        width: 50px;    height: 50px;
     }
-    .add-circle{   
-          width: 2278.33px;    height: 2278.33px; 
+    .add-circle{
+          width: 2278.33px;    height: 2278.33px;
         }
     .fixer{position:fixed;    top: 82px;    width: 100%;}
 
@@ -695,7 +1052,7 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
     -webkit-transition: .2s ease-in-out;
     transition: .2s ease-in-out;
     -webkit-appearance: none;
-    
+
 }
 .input-container:focus,.input-container:active,.wrapper-holder  .input-container form .input_rounded:active,.wrapper-holder  .input-container form .input_rounded:focus{outline: 0;}
 
