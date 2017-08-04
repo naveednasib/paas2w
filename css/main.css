@@ -908,84 +908,58 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
     margin-top: 5px;
 }
 
-/*----------------- scroll icon------------- */
-.scroll-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #f1fcfa;
-}
+    /*----------------- scroll icon------------- */
+    .scroll-container{padding-top:60px;padding-bottom:60px;position: relative;overflow: hidden;}
+    .scroll-container .mid-container{max-width: 1070px;padding-left:15px;padding-right:15px;position: relative;margin:auto;}
+    .scroll-container  article{text-align: center;}
+    .scroll-container  .tile-container{padding-top:60px;}
+    .scroll-container  .tile-container .tile{text-align: center;padding-top:30px;padding-bottom:30px;
+    /*temp*/
+    min-height: 400px;
+    }
+  .scroll-container  .tile-container .tile .heading{    font-family: 'sofia-medium';font-size:26px;}
+  .scroll-container  .tile-container .tile .para{    font-family: 'sofia-light';font-size:18px;color:#7d7d7d;padding-top:25px;}
+    .scroll-container .circle-wrapper{
+        position:absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        /* clip: rect(auto,9999px,auto,-9999px); */
+        pointer-events: none;}
+    .scroll-container .circle-wrapper .circle-radius{
+          position:fixed;
+        pointer-events: none;
+        z-index: -1;
+        background: #f3f5f9;
+        border-radius: 50%;
+        left: 0;
+         overflow: hidden;
+        top: 0;
+        bottom:0;
+        right:0;
+        margin: auto;
+          transition: all 1s ease;
+       width: 50px;    height: 50px;
 
-/*----------------- scroll icon------------- */
-.scroll-container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    border: 1px solid red;
-    position: relative;
-    overflow: hidden;
-}
+    }
+    .add-circle{
+          width: 2278.33px;    height: 2278.33px;
+        }
+    .fixer{position:fixed;    top: 82px;    width: 100%;}
 
-.scroll-container .mid-container {
-    max-width: 1070px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-    margin: auto;
-}
 
-.scroll-container article {
-    text-align: center;
-}
 
-.scroll-container .tile-container {
-    padding-top: 60px;
-}
 
-.scroll-container .tile-container .tile {
-    text-align: center;
-}
 
-.scroll-container .mid-container {
-    max-width: 1070px;
-    padding-left: 15px;
-    padding-right: 15px;
-    position: relative;
-    margin: auto;
-}
 
-.scroll-container .circle-wrapper {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    clip: rect(auto, 9999px, auto, -9999px);
-    pointer-events: none;
-}
 
-.scroll-container .circle-wrapper .circle-radius {
-    position: absolute;
-    pointer-events: none;
-    z-index: -1;
-    background: #f3f5f9;
-    border-radius: 50%;
-    left: 50%;
-    overflow: hidden;
-    top: 0;
-    /* transition: all 0.4s ease; */
-    width: 50px;
-    height: 50px;
-}
 
-.add-circle {
-    width: 2278.33px;
-    height: 2278.33px;
-}
 
-.fixer {
-    position: fixed;
-    top: 82px;
-    width: 100%;
-}
+
+
+
+
 
 /* -----------------------------~~~~~~~~ input container~~~~~~~~~~~~~~___________ */
 .input-container {
