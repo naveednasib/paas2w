@@ -53,6 +53,26 @@ $(document).ready(function () {
         } else {
             $("header").removeClass('bg-color');
         }
+        /* atom-for circle scattering */
+        var $windowTop = $(document).scrollTop();
+        var $elementTop = $(".atom-for").offset().top;
+        if ($windowTop >= $elementTop) {
+            $(".scattered-circles").addClass("animated bounceIn");
+            setTimeout(function () {
+                $(".circle1").addClass("active");
+            }, 1300);
+
+        }
+    });
+    /*circle-text active */
+    $(".circle-wrapper").hover(function () {
+        $(".circle1").removeClass('active');
+
+    });
+    /*footer list active */
+    $(".footer-list li").click(function () {
+        $(".footer-list li").removeClass("active");
+        $(this).addClass("active");
     });
 
 });
