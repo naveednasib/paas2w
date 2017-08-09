@@ -1,0 +1,267 @@
+
+/*----------------- atom-for------------- */
+
+.atom-for {
+    padding: 80px 0px;
+    background-color: #fff;
+    background-image: url(../images/dotted-bg.png);
+    background-position: 45px 175px;
+    background-repeat: no-repeat;
+    height: 140vh;
+    position: relative;
+}
+
+.atom-for article {
+    text-align: center;
+}
+
+.atom-for .section-heading {
+    color: #213242;
+    font-family: 'sofia-light';
+    font-size: 36px;
+    margin-top: 0px;
+}
+
+.atom-for .section-heading span {
+    font-size: 42px;
+    color: #14c9b0;
+    font-family: 'sofia-bold';
+    display: block;
+    margin-top: 4px;
+}
+
+.atom-for .scattered-circles {
+    position: absolute;
+}
+
+/*.atom-for .scattered-circles.circle-center {
+    left: 50% !important;
+    top: 50% !important;
+    transform: translate(-50%, -50%);
+    transition: all 0.9s ease;
+}*/
+
+.atom-for .scattered-circles.circle1 {
+    left: 12%;
+    top: 42%;
+    transition: all 1.4s ease;
+}
+
+.atom-for .scattered-circles.circle2 {
+    left: 2%;
+    top: 32%;
+    transition: all 0.5s ease;
+}
+
+.atom-for .scattered-circles.circle3 {
+    left: 33%;
+    top: 26%;
+    transition: all 1s ease;
+}
+
+.atom-for .scattered-circles.circle4 {
+    left: 45%;
+    top: 54%;
+    transition: all 1.6s ease;
+}
+
+.atom-for .scattered-circles.circle5 {
+    left: 57%;
+    top: 35%;
+    transition: all 0.8s ease;
+}
+
+.atom-for .scattered-circles.circle6 {
+    left: 66%;
+    top: 52%;
+    transition: all 1.8s ease;
+}
+
+.atom-for .scattered-circles.circle7 {
+    left: 70%;
+    top: 28%;
+    transition: all 1.5s ease;
+}
+
+.atom-for .scattered-circles.circle8 {
+    left: 27%;
+    top: 73%;
+    transition: all 0.9s ease;
+}
+
+.atom-for .scattered-circles.circle9 {
+    left: 83%;
+    top: 75%;
+    transition: all 1.2s ease;
+}
+
+.atom-for .scattered-circles.circle2 .circle-wrapper .circles img {
+    width: 54px;
+}
+
+.atom-for .scattered-circles.circle3 .circle-wrapper .circles img {
+    width: 45px;
+}
+
+.atom-for .scattered-circles.circle4 .circle-wrapper .circles img {
+    width: 95px;
+}
+
+.atom-for .scattered-circles.circle5 .circle-wrapper .circles img {
+    width: 54px;
+}
+
+.atom-for .scattered-circles.circle6 .circle-wrapper .circles img {
+    width: 82px;
+}
+
+.atom-for .scattered-circles.circle7 .circle-wrapper .circles img {
+    width: 98px;
+}
+
+.atom-for .scattered-circles.circle8 .circle-wrapper .circles img {
+    width: 64px;
+}
+
+.atom-for .scattered-circles.circle9 .circle-wrapper .circles img {
+    width: 68px;
+}
+
+.atom-for .scattered-circles.circle2 .circle-wrapper .circle-text {
+    left: 82px;
+    top: 52%;
+}
+
+.atom-for .scattered-circles.circle3 .circle-wrapper .circle-text {
+    left: 77px;
+    top: 64%;
+}
+
+.atom-for .scattered-circles.circle5 .circle-wrapper .circle-text {
+    left: 90px;
+    top: 60%;
+}
+
+.atom-for .scattered-circles.circle6 .circle-wrapper .circle-text {
+    left: 115px;
+    top: 50%;
+}
+
+.atom-for .scattered-circles.circle8 .circle-wrapper .circle-text {
+    left: 95px;
+    top: 50%;
+}
+
+.atom-for .scattered-circles.circle9 .circle-wrapper .circle-text {
+    left: -268px;
+    top: 60%;
+}
+
+.atom-for .scattered-circles.active .circle-wrapper .circle-text {
+    opacity: 1;
+    transform: translate(0%, -50%);
+    visibility: visible;
+}
+
+.atom-for .scattered-circles.circle9 .circle-wrapper .circle-text:after {
+    left: 240px;
+    transform: rotate(180deg);
+}
+
+.atom-for .scattered-circles .circles {
+    border-radius: 50%;
+    padding: 3px;
+    transition: all 0.9s ease;
+    border: 2px solid transparent;
+    overflow: hidden;
+
+}
+
+.atom-for .scattered-circles .circles img {
+    opacity: 0.4;
+    transition: opacity 0.9s ease;
+}
+
+.atom-for .scattered-circles.active .circles img {
+    opacity: 1;
+}
+
+.atom-for .scattered-circles:hover .circles img {
+    opacity: 1;
+}
+
+.atom-for .scattered-circles:hover .circles {
+    border-color: #14c9b0;
+    overflow: visible;
+    opacity: 1;
+}
+
+.atom-for .scattered-circles {
+    display: none;
+}
+
+.atom-for .scattered-circles:hover {
+    z-index: 1;
+}
+
+.atom-for .scattered-circles.animated {
+    display: block;
+}
+
+.atom-for .scattered-circles .circle-wrapper .circle-text {
+    background-color: #fff;
+    padding: 20px 0px 20px 20px;
+    box-shadow: 1px 0px 10px 2px rgba(0, 0, 0, 0.09);
+    position: absolute;
+    left: 132px;
+    top: 50%;
+    transform: translate(-10%, -50%);
+    width: 240px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.7s ease, transform 0.7s ease;
+    visibility: hidden;
+}
+
+.atom-for .scattered-circles .circle-wrapper:hover .circle-text {
+    opacity: 1;
+    transform: translate(0%, -50%);
+    visibility: visible;
+}
+
+.atom-for .scattered-circles .circle-wrapper {
+    display: inline-block;
+    padding-right: 40px;
+}
+
+.atom-for .scattered-circles .circle-text:after {
+    content: '';
+    background-image: url(../images/map-arrow.png);
+    position: absolute;
+    left: -16px;
+    top: 16px;
+    height: 23px;
+    width: 16px;
+}
+
+.atom-for .scattered-circles .circle-text img {
+    float: left;
+    margin-right: 15px;
+}
+
+.atom-for .scattered-circles .circle-text h3 {
+    font-size: 26px;
+    color: #14c9b0;
+    margin: 0px;
+    margin-top: 0;
+    line-height: 1;
+    margin-top: -5px;
+    vertical-align: middle;
+}
+
+.atom-for .scattered-circles .circle-text h3 span {
+    font-size: 18px;
+    color: #213242;
+    display: block;
+    margin-top: 5px;
+}

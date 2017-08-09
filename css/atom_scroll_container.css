@@ -1,0 +1,125 @@
+
+/*----------------- scroll icon------------- */
+.scroll-container {
+    padding-top: 70px;
+    padding-bottom: 70px;
+    position: relative;
+    overflow: hidden;
+}
+
+.scroll-container .mid-container {
+    max-width: 1230px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    margin: auto;
+}
+
+.scroll-container article {
+    text-align: center;
+}
+
+.scroll-container article h2 {
+    margin-top: 0;
+}
+
+.scroll-container .tile-container {
+    padding-top: 60px;
+}
+
+.scroll-container .tile-container .tile {
+    text-align: center;
+    padding: 30px 45px;
+    transform: scale(0.9);
+    min-height: 400px;
+    transition: all 0.4s ease;
+}
+
+.scroll-container .tile-container .tile.active {
+    background-color: #fff;
+    box-shadow: 0px 0px 15px 2px rgba(0, 0, 0, 0.09);
+    transform: scale(1);
+    cursor: pointer;
+}
+
+.scroll-container .tile-container .tile .heading {
+    font-family: 'sofia-medium';
+    font-size: 26px;
+}
+
+.scroll-container .tile-container .tile .para {
+    font-family: 'sofia-light';
+    font-size: 18px;
+    color: #7d7d7d;
+    padding-top: 25px;
+}
+
+.scroll-container .tile-container .tile a.get-started-btn {
+    color: #14c9b0;
+    font-size: 20px;
+    border: 2px solid #14c9b0;
+    display: inline-block;
+    padding: 4px 39px;
+    border-radius: 30px;
+    margin-top: 30px;
+    transition: all 0.5s ease;
+    text-decoration: none;
+    opacity: 0;
+    transform: translate(0, -10px);
+}
+
+.scroll-container .tile-container .tile a.get-started-btn i {
+    font-size: 15px;
+    vertical-align: middle;
+    margin-right: 10px;
+    margin-top: -3px;
+}
+
+.scroll-container .tile-container .tile a.get-started-btn:hover {
+    color: #fff;
+    background-color: #14c9b0;
+}
+
+.scroll-container .tile-container .tile.active a.get-started-btn {
+    opacity: 1;
+    transform: translate(0, 0px);
+}
+
+.scroll-container .circle-wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    /* clip: rect(auto,9999px,auto,-9999px); */
+    pointer-events: none;
+}
+
+.scroll-container .circle-wrapper .circle-radius {
+    position: absolute;
+    pointer-events: none;
+    z-index: -1;
+    background: #f3f5f9;
+    border-radius: 50%;
+    left: 0;
+    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    transition: all 1s ease;
+    width: 50px;
+    height: 50px;
+
+}
+
+.add-circle {
+    width: 2278.33px;
+    height: 2278.33px;
+}
+
+.fixer {
+    position: fixed;
+    top: 82px;
+    width: 100%;
+}

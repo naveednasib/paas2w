@@ -1,0 +1,230 @@
+
+/*----------------- atom-feature------------- */
+.atom-feature {
+    position: relative;
+    padding-top: 65px;
+    padding-bottom: 65px;
+    z-index: 2;
+}
+
+.atom-feature .mid-container2 {
+    max-width: 1230px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.atom-feature article {
+    text-align: center;
+}
+
+.atom-feature article .heading {
+    font-weight: bold;
+    font-family: 'sofia-medium';
+    font-size: 36px;
+    margin-top: 0px;
+}
+
+.p-btn {
+    padding: 6px 40px;
+    position: relative;
+    font-size: 20px;
+    border: 2px solid #17d7b1;
+    border-radius: 20px;
+    color: #17d7b1;;
+    overflow: hidden;
+    z-index: 2;
+    background-color: transparent;
+    transition: 0.5s ease background-color;
+    z-index: 1;
+}
+
+.p-btn:hover, .p-btn:focus {
+    color: #fff;
+    position: relative;
+    background-color: #17d7b1;
+}
+
+.atom-feature article .para {
+    color: #7d7d7d;
+    max-width: 770px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    font-size: 18px;
+    font-family: 'sofia-light';
+    padding-top: 15px;
+    line-height: 24px;
+}
+
+.atom-feature .paralla-abs-svg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: -40%;
+    top: -50%;
+    z-index: -1;
+    background-image: url(../images/lg-partial.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.atom-feature article .p-btn {
+    font-size: 20px;
+    margin-top: 50px;
+}
+
+.atom-feature .tile-container {
+    padding-top: 30px;
+    padding-bottom: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.atom-feature .tile-container .mid-container2 {
+    max-width: 1260px;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: relative;
+    margin: auto;
+}
+
+.atom-feature .tile-container .box {
+}
+
+.atom-feature .tile-container .tile {
+    padding: 28px 15px;
+    color: #7c7c7c;
+    z-index: 3;
+    position: relative;
+    overflow: hidden;
+    transition: color 0.9s ease;
+}
+
+.atom-feature .tile-container .box .bg-gredient {
+    position: absolute;
+    border-radius: 100%;
+    transition: transform 0.9s ease, width 0.9s ease, height 0.9s ease;
+    transform: scale(0, 0);
+    width: 10px;
+    height: 10px;
+    z-index: 1;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+    background: #027eac;
+    background: -moz-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%);
+    background: -webkit-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%);
+    background: linear-gradient(to right, #027eac 0%, #099eae 50%, #17d7b1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#027eac', endColorstr='#17d7b1', GradientType=1);
+}
+
+.atom-feature .tile-container .tile:hover {
+    color: white;
+    cursor: pointer;
+}
+
+.atom-feature .tile-container .tile:hover .bg-gredient {
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transform: scale(1.5, 2.3);
+    background: #027eac;
+    background: -moz-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%);
+    background: -webkit-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%);
+    background: linear-gradient(to right, #027eac 0%, #099eae 50%, #17d7b1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#027eac', endColorstr='#17d7b1', GradientType=1);
+    transition: transform 0.9s ease, width 0.9s ease, height 0.9s ease;
+
+}
+
+.atom-feature .tile-container .tile img {
+    margin-right: 5px;
+    z-index: 3;
+    position: relative;
+    background-image: url(../images/40901-atom-feature-sprite.png);
+    width: 46px;
+    display: inline-block;
+    transition: 0s all;
+    transition-delay: 0.3s;
+}
+
+.atom-feature .tile-container .tile img.sandbox {
+    background-position: 0px -482px;
+    height: 35px;
+}
+
+.atom-feature .tile-container .tile img.anti-virus {
+    background-position: 0 -106px;
+    height: 35px;
+}
+
+.atom-feature .tile-container .tile img.url-filtering {
+    background-position: 0 -404px;
+    height: 29px;
+}
+
+.atom-feature .tile-container .tile img.ad-blocker {
+    background-position: 0 0;
+    height: 43px;
+}
+
+.atom-feature .tile-container .tile img.app-protocol {
+    background-position: 0 -294px;
+    height: 45px;
+}
+
+.atom-feature .tile-container .tile img.ids-ips {
+    background-position: 0 -194px;
+    height: 40px;
+}
+
+.atom-feature .tile-container .tile:hover img.sandbox {
+    background-position: 0 -526px;
+    height: 35px;
+}
+
+.atom-feature .tile-container .tile:hover img.anti-virus {
+    background-position: 0 -150px;
+    height: 35px;
+}
+
+.atom-feature .tile-container .tile:hover img.url-filtering {
+    background-position: 0 -443px;
+    height: 29px;
+}
+
+.atom-feature .tile-container .tile:hover img.ad-blocker {
+    background-position: 0 -53px;
+    height: 43px;
+}
+
+.atom-feature .tile-container .tile:hover img.app-protocol {
+    background-position: 0 -349px;
+    height: 45px;
+}
+
+.atom-feature .tile-container .tile:hover img.ids-ips {
+    background-position: 0 -244px;
+    height: 40px;
+}
+
+.atom-feature .tile-container .tile .heading {
+    font-family: 'sofia-medium';
+    font-size: 22px;
+    z-index: 3;
+    position: relative;
+    margin-top: 25px;
+}
+
+.atom-feature .tile-container .tile .para {
+    font-size: 18px;
+    font-family: 'sofia-light';
+    z-index: 3;
+    position: relative;
+}

@@ -1,0 +1,220 @@
+
+/* -----------------------------~~~~~~~~ input container~~~~~~~~~~~~~~___________ */
+.input-container {
+    padding-top: 70px;
+    padding-bottom: 85px;
+    position: relative;
+    overflow: hidden;
+}
+
+.input-container .mid-container {
+    max-width: 870px;
+    margin: auto;
+    position: relative;
+    text-align: center;
+}
+
+.input-container article h2 {
+    font-family: 'sofia-light';
+    margin-top: 0px;
+}
+
+.input-container article h2 span {
+    display: block;
+    color: #13c9b0;
+    font-family: 'sofia-bold';
+}
+
+.input-container form .input_rounded {
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.wrapper-holder .input-container form .input_rounded {
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+}
+
+.input-container form .input {
+    padding: 21px 25px 21px 25px;
+    height: 60px;
+    width: 100%;
+    font: 400 15px/1.618em Asap, Arial, Sans-Serif;
+    letter-spacing: .2px;
+    background: transparent;
+    background-position: -20px 22px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #D5DBE6;
+    color: #252a37;
+    -webkit-transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
+    -webkit-appearance: none;
+
+}
+
+.input-container:focus, .input-container:active, .wrapper-holder .input-container form .input_rounded:active, .wrapper-holder .input-container form .input_rounded:focus {
+    outline: 0;
+}
+
+.input-container form input[type="submit"] {
+    min-width: 220px;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    font-size: 24px;
+    font-family: "sofia-light";
+}
+
+.input-container .button-blue {
+    background: #14c9b0;
+    color: white;
+    font-family: 'sofia-medium';
+}
+
+.input-container .get_our_media_kit-center form {
+    position: relative;
+    margin: auto;
+    width: 540px;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.input-container .button {
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-flex-shrink: 0;
+    -ms-flex-negative: 0;
+    flex-shrink: 0;
+    padding: 12px 36px;
+    height: 40px;
+    border: none;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.input-container .button_big {
+    padding: 13px 40px;
+    height: 60px;
+}
+
+.input-container .media_kit-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.input-container .fom-container {
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.input-container form {
+    position: relative;
+    margin: auto;
+    width: 540px;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.input-container form input.input.input_rounded:focus ~ .media_kit-bg #obj_1 {
+    -webkit-transform: translate(40px, -45px) rotate(360deg);
+    -ms-transform: translate(40px, -45px) rotate(360deg);
+    transform: translate(40px, -45px) rotate(360deg);
+}
+
+.input-container form input.input.input_rounded:focus ~ .media_kit-bg #obj_2 {
+    -webkit-transform: translate(410px, 50px) rotate(360deg);
+    -ms-transform: translate(410px, 50px) rotate(360deg);
+    transform: translate(410px, 50px) rotate(360deg);
+}
+
+.input-container form input.input.input_rounded:focus ~ .media_kit-bg #obj_3 {
+    -webkit-transform: translate(-450px, 45px) rotate(360deg);
+    -ms-transform: translate(-450px, 45px) rotate(360deg);
+    transform: translate(-450px, 45px) rotate(360deg);
+}
+
+.input-container form input.input.input_rounded:focus ~ .media_kit-bg #obj_4 {
+    -webkit-transform: translate(300px, 50px);
+    -ms-transform: translate(300px, 50px);
+    transform: translate(300px, 50px);
+}
+
+.input-container form input.input.input_rounded:focus ~ .media_kit-bg #obj_5 {
+    -webkit-transform: translate(-40px, 15px);
+    -ms-transform: translate(-40px, 15px);
+    transform: translate(-40px, 15px);
+}
+
+.input-container form input.input.input_rounded:focus ~ .media_kit-bg #obj_6 {
+    -webkit-transform: translate(-290px, 50px);
+    -ms-transform: translate(-290px, 50px);
+    transform: translate(-290px, 50px);
+}
+
+.input-container form input.input.input_rounded:focus ~ .media_kit-bg #obj_7 {
+    -webkit-transform: translate(280px, 30px);
+    -ms-transform: translate(280px, 30px);
+    transform: translate(280px, 30px);
+}
+
+.input-container form input.input.input_rounded:focus ~ .media_kit-bg #obj_8 {
+    -webkit-transform: translate(300px, 10px);
+    -ms-transform: translate(300px, 10px);
+    transform: translate(300px, 10px);
+}
+
+.input-container form input.input.input_rounded:focus ~ .media_kit-bg #obj_9 {
+    -webkit-transform: translate(-40px, 0px);
+    -ms-transform: translate(-40px, 0px);
+    transform: translate(-40px, 0px);
+}
+
+.input-container form input.input.input_rounded:focus ~ .media_kit-bg #obj_10 {
+    -webkit-transform: translate(-180px, 50px);
+    -ms-transform: translate(-180px, 50px);
+    transform: translate(-180px, 50px);
+}
+
+.input-container .media_kit-bg * {
+    -webkit-transition: -webkit-transform .6s ease-in-out;
+    transition: -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    transition: transform .6s ease-in-out, -webkit-transform .6s ease-in-out;
+    -webkit-transform-origin: center;
+    -ms-transform-origin: center;
+    transform-origin: center;
+}

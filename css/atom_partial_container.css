@@ -1,0 +1,168 @@
+
+/* -----------------------------~~~~~~~~ input container~~~~~~~~~~~~~~___________ */
+
+.slider-partial-container {
+    position: relative;
+    padding-top: 70px;
+}
+
+.slider-partial-container .mid-container {
+    max-width: 1230px;
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+    z-index: 3;
+    position: relative;
+}
+
+.slider-partial-container article {
+    max-width: 580px;
+    margin: auto;
+    text-align: center;
+    z-index: 3;
+    position: relative;
+}
+
+.slider-partial-container .img-responsive.top-logo {
+    margin: 0 auto;
+}
+
+.slider-partial-container .heading {
+    font-weight: bold;
+    font-family: 'sofia-bold';
+    color: #fff;
+    font-size: 36px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+.slider-partial-container .para {
+    color: #fff;
+    margin: 0;
+    font-size: 18px;
+    font-family: "sofia-light"
+}
+
+.slider-partial-container .img-container {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slider-partial-container .img-container .img-btn-wrapper {
+    transition: opacity 1s ease, transform 1.5s ease;
+    opacity: 0;
+    transform: scale(0.9);
+    position: absolute;
+    width: 100%;
+}
+
+.slider-partial-container .img-container .img-btn-wrapper.active {
+    transition: opacity 1.5s ease, transform 1.5s ease;
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+}
+
+.slider-partial-container .img-container .img-btn-wrapper img {
+    margin: auto;
+}
+
+.slider-partial-container .img-container .img-btn-wrapper.active .btn-wrapper {
+    position: absolute;
+    top: 65%;
+    transform: translate(-50%, -65%);
+    display: inline-block;
+    opacity: 0;
+    transition: opacity 0.9s ease;
+    padding: 40px 50px;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 1%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 1) 51%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#00ffffff', GradientType=1);
+}
+
+.slider-partial-container .img-container .img-btn-wrapper.active:hover .btn-wrapper {
+    opacity: 1;
+}
+
+.slider-partial-container .img-container .img-btn-wrapper.active a.dwn-sdk {
+    color: #14c9b0;
+    background-color: #fff;
+    font-size: 18px;
+    border: 2px solid #14c9b0;
+    padding: 7px 59px;
+    display: inline-block;
+    border-radius: 30px;
+    text-decoration: none;
+}
+
+.slider-partial-container .img-container .img-btn-wrapper.active a.dwn-sdk:hover {
+    color: #fff;
+    background-color: #14c9b0;
+
+}
+
+.slider-partial-container .img-container .img-btn-wrapper.active a.dwn-sdk i {
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.slider-partial-container .os-types {
+    padding: 0;
+    list-style-type: none;
+    margin: 50px 0px;
+    text-align: center;
+}
+
+.slider-partial-container .os-types li {
+    display: inline-block;
+    color: #fff;
+    cursor: pointer;
+    text-align: center;
+}
+
+.slider-partial-container .os-types li:last-child {
+    margin-right: 0px;
+}
+
+.slider-partial-container .os-types li span {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    font-family: "sofia-light";
+    opacity: 0;
+    transition: all 0.9s ease;
+    text-transform: uppercase;
+}
+
+.slider-partial-container .os-types li i {
+    transform: scale(1);
+    margin: 0px 20px;
+    font-size: 25px;
+    transition: all 0.9s ease;
+}
+
+.slider-partial-container .os-types li.active i {
+    transform: scale(1.1);
+}
+
+.slider-partial-container .os-types li.active span {
+    opacity: 1;
+}
+
+.slider-partial-container .bg-color {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#027eac+0,099eae+50,17d7b1+100 */
+    background: #027eac; /* Old browsers */
+    background: -moz-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #027eac 0%, #099eae 50%, #17d7b1 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #027eac 0%, #099eae 50%, #17d7b1 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#027eac', endColorstr='#17d7b1', GradientType=1); /* IE6-9 */
+    top: 0;
+}

@@ -1,0 +1,224 @@
+
+/*----------------- Atom Footer------------- */
+.footer {
+    padding: 80px 0px 0px;
+    background-color: #f9f9f9;
+    background-image: url('../images/footer-bg.png');
+    background-repeat: no-repeat;
+    background-position: 100% 75%;
+}
+
+.footer .mid-container {
+    max-width: 1190px;
+    margin: 0 auto;
+}
+
+.footer p.description {
+    font-family: "sofia-light";
+    color: #7c7c7c;
+    font-size: 18px;
+    position: relative;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+
+.footer p.description:before {
+    content: '';
+    position: absolute;
+    background-color: #d4d4d4;
+    top: -30px;
+    left: 0;
+    height: 1px;
+    width: 137px;
+}
+
+.footer ul.social {
+    margin-top: 40px;
+    margin-bottom: 140px;
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+    width: 100%;
+}
+
+.footer ul.social li {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.footer ul.social li a {
+    color: #bfbfbf;
+    font-size: 25px;
+    text-decoration: none;
+    position: relative;
+}
+
+.footer ul.social li a:hover.fa-facebook {
+    color: #3b5998;
+}
+
+.footer ul.social li a:hover.fa-twitter {
+    color: #1DA1F2;
+}
+
+.footer ul.social li a:hover.fa-google-plus {
+    color: #DC4A38;
+}
+
+.footer ul.social li a:hover.fa-youtube {
+    color: #EE1C1B;
+}
+
+.footer ul.social li a span {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 220%);
+    display: block;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-family: "sofia-light";
+    white-space: nowrap;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.footer ul.social li a:hover span {
+    opacity: 1;
+    transform: translate(-50%, 160%);
+}
+
+.footer ul.footer-list {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+    display: inline-block;
+}
+
+.footer ul.footer-list > li {
+    margin-bottom: 45px;
+    position: relative;
+    cursor: pointer;
+}
+
+.footer ul.footer-list > li > a {
+    font-size: 24px;
+    color: #7c7c7c;
+    font-family: "sofia-light";
+    transition: all 0.5s ease;
+    text-decoration: none;
+}
+
+.footer ul.footer-list > li > a:hover {
+    color: #14c9b0;
+}
+
+.footer ul.footer-list > li.active > a {
+    color: #14c9b0;
+}
+
+.footer ul.footer-list > li > a > i {
+    margin-right: 10px;
+    width: 30px;
+}
+
+.footer ul.footer-list > li > .footer-list-container {
+    position: absolute;
+    left: 140%;
+    top: -50px;
+    background-color: #fff;
+    padding: 35px;
+    min-width: 368px;
+    border-radius: 10px;
+    opacity: 0;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.09);
+    transition: all 0.9s ease;
+}
+
+.footer ul.footer-list > li > .footer-list-container:after {
+    content: '';
+    position: absolute;
+    left: -25px;
+    top: 60px;
+    background-image: url(../images/footer-arrow.png);
+    height: 32px;
+    width: 25px;
+    background-repeat: no-repeat;
+}
+
+.footer ul.footer-list > li.product > .footer-list-container {
+
+}
+
+.footer ul.footer-list > li.product > .footer-list-container:after {
+    top: 53px;
+}
+
+.footer ul.footer-list > li.feature > .footer-list-container {
+
+}
+
+.footer ul.footer-list > li.feature > .footer-list-container:after {
+    top: 53px;
+}
+
+.footer ul.footer-list > li.company > .footer-list-container {
+    top: -100px;
+}
+
+.footer ul.footer-list > li.company > .footer-list-container:after {
+    top: 103px;
+}
+
+.footer ul.footer-list > li.support > .footer-list-container {
+    top: -100px;
+}
+
+.footer ul.footer-list > li.support > .footer-list-container:after {
+    top: 99px;
+}
+
+.footer ul.footer-list > li.active > .footer-list-container {
+    opacity: 1;
+}
+
+.footer-list-container ul.inner-list {
+    padding: 0;
+    list-style-type: none;
+    margin: 0;
+}
+
+.footer-list-container ul.inner-list li {
+    margin-bottom: 15px;
+}
+
+.footer-list-container ul.inner-list li a {
+    font-family: "sofia-light";
+    color: #7c7c7c;
+    font-size: 18px;
+}
+
+.footer-list-container i {
+    font-size: 40px;
+    background: -webkit-linear-gradient(#099aae, #13c5af);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #14c9b0;
+    margin-bottom: 25px;
+}
+
+.footer-bottom {
+    background-color: #f1f0f0;
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    font-size: 0;
+    padding: 16px 0px;
+}
+
+.footer-bottom .footer-bottom-text {
+    color: #7c7c7c;
+    font-size: 12px;
+    margin-bottom: 0px;
+    font-family: "sofia-medium";
+}
