@@ -68,17 +68,14 @@ $(document).ready(function () {
            
                 tempDiv = (windowTop-(containerTop ));
                  tempDiv = (tempDiv*6);
-               
-               console.log(  tempDiv);
               //  $(".atom-feature").css("margin-bottom", hitPointPostive);
               $(".circle-radius").addClass("add-circle");
                 $(".atom-feature").css("margin-bottom", hitPointPostive);
                 
                 width_limit = count --;
-                 console.log( width_limit );
               
                  $(".scroll-container .circle-wrapper .circle-radius").css({"width":tempDiv,"height":tempDiv});
-              
+
                     if( width_limit >1){
                     // $(".scroll-container .circle-wrapper .circle-radius").css({ "transform": "scale(" + (width_limit) + ")" });
                     }

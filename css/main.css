@@ -998,10 +998,10 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
     padding: 4px 39px;
     border-radius: 30px;
     margin-top: 30px;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
     text-decoration: none;
     opacity: 0;
-    transform: translate(0, 0);
+    transform: translate(0, -10px);
 }
 
 .scroll-container .tile-container .tile a.get-started-btn i {
@@ -1018,7 +1018,7 @@ ul.dropdown-menu.atom-menu li.menu-item img.msp {
 
 .scroll-container .tile-container .tile.active a.get-started-btn {
     opacity: 1;
-    transform: translate(0, 10px);
+    transform: translate(0, 0px);
 }
 
 .scroll-container .circle-wrapper {
