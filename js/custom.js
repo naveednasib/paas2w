@@ -1,4 +1,8 @@
-$(document).ready(function(){
+$(document).ready(function () {
+
+    /*setting box dimensions equal to image dimensions */
+    var img = $(".slider-partial-container .img-container img");
+    $(".slider-partial-container .img-container").css({height: img.height()});
 
     /*dropdown menu active */
     $("ul.dropdown-menu.atom-menu li.menu-item").hover(function () {
@@ -53,9 +57,6 @@ $(document).ready(function(){
         $(this).addClass("active");
 
     });
-    /*setting box dimensions equal to image dimensions */
-    var img = $(".slider-partial-container .img-container img");
-    $(".slider-partial-container .img-container").css({height:img.height()});
 
     /*Changing image on click*/
     $(".slider-partial-container .os-types li").click(function () {
